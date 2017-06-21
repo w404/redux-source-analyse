@@ -105,7 +105,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
         }
     }
 
-    // //触发action去执行reducer，更新state
+    // 触发action去执行reducer，更新state
     function dispatch(action) {
         if (!isPlainObject(action)) {
             throw new Error(
